@@ -1,4 +1,4 @@
-# Backend Explorer
+# Backend Studio
 
 An interactive backend-development learning & demonstration platform. Every card on the
 dashboard represents a real backend concept (Express routing, middleware, MVC, MongoDB,
