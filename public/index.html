@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Backend Studio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand"><span class="bracket">&gt;_</span> backend-studio</div>
+      <div class="topbar-meta">
+        <span class="dot"></span>
+        <span id="server-status">checking server…</span>
+      </div>
+    </header>
+
+    <main id="app-root">
+      <!-- Rendered by js/app.js -->
+    </main>
+
+    <footer class="app-footer">Node.js · Express · MongoDB — every click below makes a real API call<br/>Developed with ❤️ by Sanjay</footer>
+  </div>
+
+  <!-- Signature element: persistent request/response inspector dock -->
+  <div class="inspector" id="inspector">
+    <div class="inspector-bar" id="inspector-bar">
+      <span class="label">Last Request</span>
+      <span class="method" id="insp-method">—</span>
+      <span class="path" id="insp-path">Trigger any action to see the live request/response cycle here</span>
+      <span class="badge" id="insp-status" style="display:none;"></span>
+      <span class="mono" id="insp-time" style="color: var(--text-dim); font-size: 12px;"></span>
+      <span class="chevron">▲</span>
+    </div>
+    <div class="inspector-body">
+      <div>
+        <p class="inspector-col-title">Request</p>
+        <pre class="code-block" id="insp-request">No request sent yet.</pre>
+      </div>
+      <div>
+        <p class="inspector-col-title">Response</p>
+        <pre class="code-block" id="insp-response">No response yet.</pre>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/inspector.js"></script>
+  <script src="/js/modules/clientServer.js"></script>
+  <script src="/js/modules/httpMethods.js"></script>
+  <script src="/js/modules/router.js"></script>
+  <script src="/js/modules/mvc.js"></script>
+  <script src="/js/modules/middleware.js"></script>
+  <script src="/js/modules/mongodb.js"></script>
+  <script src="/js/modules/requestResponse.js"></script>
+  <script src="/js/modules/errors.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
